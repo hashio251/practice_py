@@ -36,7 +36,7 @@ def predict_digit(data):
     return clf.predict([data])[0]
 
 # PNG画像を全部取得
-image_files = sorted(glob.glob("*.png"))
+image_files = sorted(glob.glob("images/*.png"))
 
 for filename in image_files:
     # 予測
