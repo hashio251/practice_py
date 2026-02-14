@@ -9,6 +9,8 @@ try:
 except AttributeError:
     images = digits.data.reshape(-1, 8, 8)
 
+plt.figure(figsize=(10, 5))
+
 for i in range(50):
     plt.subplot(5, 10, i +1)
     plt.axis("off")
