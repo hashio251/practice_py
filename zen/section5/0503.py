@@ -10,3 +10,15 @@ PP_05_03_引数の種類.ipynb
 位置専用引数は / の前に書きます。
 キーワード専用引数は * の後に書きます。
 '''
+# apple は位置
+# orange はどっちも
+# banana はキーワード
+def fluits_kinds(apple, /, orange, *, banana):
+  print(f"appleの値は{apple}です。")
+  print(f"orangeの値は{orange}です。")
+  print(f"bananaの値は{banana}です。")
+  return "完了しました"
+
+fluits = fluits_kinds(1, 2, banana=3)
+
+print(fluits)
