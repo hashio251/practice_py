@@ -10,6 +10,14 @@ PP_05_05_戻り値を返す関数.ipynb
 そして、「摂氏100度は華氏〇度です」と表示してください。
 〇には、具体的な値を入れてください。
 '''
+def celsius_to_fahrenheit(celsius):
+    fahrenheit = celsius * 1.8 + 32
+    return fahrenheit
+
+c = 100
+f = celsius_to_fahrenheit(c)
+
+print(f"摂氏{c}度は華氏{f}度です。")
 
 
 
@@ -22,7 +30,15 @@ PP_05_05_戻り値を返す関数.ipynb
 この関数に 32 を渡すと、 0 が返ってくることを確認してください。
 この関数に 212 を渡すと、 100 が返ってくることを確認してください。
 '''
+def fahrenheit_to_celsius(fahrenheit):
+    celsius = (fahrenheit - 32) * 5 / 9
+    return celsius
 
+f = 32
+f = 212
+c = fahrenheit_to_celsius(f)
+
+print(f"華氏{f}度は摂氏{c}度です。")
 
 
 
