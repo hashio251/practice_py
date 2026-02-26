@@ -10,6 +10,7 @@ PP_06_02_インデックスとスライス.ipynb
 numbers = ["one", "two", "three", "four", "five", "six", "seven"]
 インデックスを使って、 "three" を参照してください。
 '''
+numbers = ["one", "two", "three", "four", "five", "six", "seven"]
 
 
 
